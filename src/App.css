@@ -18,9 +18,8 @@ body {
   transition: all 0.4s ease;
 }
 
-/*----------------------------------------
-HEADER
-----------------------------------------*/
+/*----------------------------------------*/
+
 header {
   text-align: center;
   padding: 120px 20px 60px;
@@ -34,27 +33,6 @@ header .welcome {
   font-size: 1.2rem;
   opacity: 0.85;
   margin-bottom: 10px;
-}
-
-HEADER
-----------------------------------------*/
-header {
-  text-align: center;
-  padding: 30px 20px 60px; 
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
-  position: relative;
-  
-}
-
-header .welcome {
-  font-size: 1.2rem;
-  opacity: 0.85;
-  margin-bottom: 10px;
-  position: relative;
-  top: -50px;
-  
 }
 
 header p {
