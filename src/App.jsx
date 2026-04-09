@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // import AOS styles
+import "aos/dist/aos.css"; 
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -12,7 +12,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [dark, setDark] = useState(false);
 
   // Initialize AOS
   useEffect(() => {
@@ -21,27 +20,14 @@ function App() {
     offset: 50,
     once: false, // <--- repeat animation on scroll
   });
-  AOS.refresh(); // refresh para ma-detect lahat ng elements
+  AOS.refresh(); 
 }, []);
 
 
-  // Toggle dark class on body
-  useEffect(() => {
-    if (dark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [dark]);
-
-  
-
   return (
-    <div className={dark ? "dark" : ""}>
-      <button className="toggle" onClick={() => setDark(!dark)}>🌙</button>
-
-      <Header />
+    <div>
       <Navbar />
+      <Header />
       <About />
       <Skills />
       <Projects />
