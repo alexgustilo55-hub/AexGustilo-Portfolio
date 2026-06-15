@@ -8,11 +8,11 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-
   // Initialize AOS
   useEffect(() => {
   AOS.init({
@@ -30,6 +30,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
       
