@@ -74,7 +74,7 @@ function Projects() {
                 <FaGithub className="icon" /> Code
               </a>
 
-              <a href="#" target="_blank" className="live">
+              <a href="https://filipino-recipes.netlify.app/" target="_blank" className="live">
                 <FaExternalLinkAlt className="icon" /> Live Demo
               </a>
             </div>
